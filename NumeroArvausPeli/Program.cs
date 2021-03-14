@@ -52,7 +52,7 @@ namespace Arvauspeli
 
                     for (int i = 0; i < integerLista.Count; i++)  //Listalta tulostetaan kaikki alkiot konsolille
                     {
-                        Console.WriteLine(i + ". arvauksesi oli: " + integerLista[i]);
+                        Console.WriteLine("Funtsi tämä kohta itse!"); // integerLista[0] avulla pääsisit tulostamaan 1. arvauksen, mutta mitä laitat 1 tilalle nyt? 
                     }
 
                     Console.Write("Paina enter lopettaaksesi pelin");
