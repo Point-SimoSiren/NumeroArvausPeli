@@ -4,22 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Palautettava_Arvauspeli ///Tehnyt: Simo Sirén koulutehtävänään
+namespace Arvauspeli
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Boolean ok = false;      //Esitellään käytettävät muuttujat
+            Boolean ok = false;
             int mysteeri;
             int arvaus;
-            Random rnd = new Random();  //Tämä muuttuja on random, eli kone arpoo sen ohjelman alussa.
+            Random rnd = new Random();  //Otetaan käyttöön Random toiminnallisuus ja asetetaan se rnd muuttujaan.
 
             //Perustetaan integertyypin lista nimeltä "integerLista"
             List<int> integerLista = new List<int>();   
 
-            //random sijoitetaan ja kerrotaan ohjelmalle, että arvottavan luvun on oltava väliltä 1-100.
-            mysteeri = rnd.Next(1, 100);   
+            //Random arvotaan sijoitetaan mysteeri muuttujaan ja kerrotaan ohjelmalle, että arvottavan luvun on oltava väliltä 1-100.
+            mysteeri = rnd.Next(1, 100);
+            
             Console.WriteLine("**ARVAUSPELI** Ohjelma arpoi juuri luvun väliltä 1-100");
             Console.WriteLine("Saat yrittää arvata numeron");
 
